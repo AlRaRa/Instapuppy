@@ -1,15 +1,21 @@
 import * as React from 'react'
 interface IIntroProps{
-  text: string
+  text?: string
 
+}
+
+interface IIntroState{
+  text: string,
+  dato: number
 }
 
 
 
-export default class Intro extends React.Component<IIntroProps>{
+export default class Intro extends React.Component<IIntroProps, IIntroState>{
 
 
   public state = {
+    dato: 2,
     text:'Soy el texto del estado'
   }
     public render(){

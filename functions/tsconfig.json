@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "typeRoots":["./functions/node_modules/@types"],
+    "lib": ["es6"],
     "module": "commonjs",
     "noImplicitReturns": true,
     "noUnusedLocals": true,

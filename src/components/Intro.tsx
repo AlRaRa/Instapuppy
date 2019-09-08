@@ -25,9 +25,14 @@ export default class Intro extends React.Component<IIntroProps, IIntroState>{
         const t = text ? text : this.state.text 
 
         return(
-        <p className="App-intro">
+        <p onClick={this.handleClick}className="App-intro">
         <span>{t}</span>
       </p>
         )
     }
+
+    private handleClick = () =>{
+      this.setState({ text: 'Me actualize wey'})
+    }
+    
 }

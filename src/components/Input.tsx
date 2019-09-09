@@ -8,15 +8,17 @@ const style = {
     border: '1px solid #ddd',
     padding:'10px 15px',
 }
-export default class Card extends React.Component{
+
+interface IInputProps{
+    placeholder?: string
+}
+
+
+export default class Input extends React.Component<IInputProps>{
     public render(){
-        const {children} = this.props
 
         return(
-            <div style={style}>
-
-            {children}
-            </div>
+            <input {...this.props}  style={style}/>
         )
     }
 }

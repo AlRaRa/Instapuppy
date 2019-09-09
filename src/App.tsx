@@ -1,17 +1,23 @@
 import * as React from 'react';
 import './App.css';
-import Header from './components/Header'
-import Intro from './components/Intro'
+import Card from './components/Card';
+import Container from './components/Container'
+
+
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="App">
-       <Header />
-       <Intro />
-       <Intro  text='Texto para intro 2'/>
+     <Container>
+        <Card>
+
+
+         </Card> 
+     </Container>
        
-      </div>
+       
+       
+     
     );
   }
 }

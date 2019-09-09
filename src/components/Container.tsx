@@ -4,11 +4,13 @@ import * as React from 'react'
 
 
 const style = {
-    backgroundColor:'#fff',
-    border: '1px solid #eee',
+    backgroundColor:'#eee',
     padding:'10px 15px',
+    height: '100vh',
+    width:'100vw'
 }
-export default class Card extends React.Component{
+
+export default class Container extends React.Component{
     public render(){
         const {children} = this.props
 

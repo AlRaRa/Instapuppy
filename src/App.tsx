@@ -11,8 +11,8 @@ class App extends React.Component {
      <Container>
         <Card>
 
-
-         </Card> 
+          lala
+        </Card>
      </Container>
        
        

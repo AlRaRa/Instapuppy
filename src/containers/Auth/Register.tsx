@@ -13,7 +13,7 @@ import Title from '../../components/Tittle';
 export default class Login extends React.Component{
     public render(){
         return(
-            <Container>
+            <Container center={true}>
             <Card>
               <Title>Registro</Title>
               <Input placeholder='Correo' label='Correo'/>

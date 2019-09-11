@@ -12,7 +12,7 @@ import Title from '../../components/Tittle';
 export default class Login extends React.Component{
     public render(){
         return(
-            <Container>
+            <Container center={true}>
             <Card>
               <Title>Iniciar Sesion</Title>
               <Input placeholder='Correo' label='Correo'/>

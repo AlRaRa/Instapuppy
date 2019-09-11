@@ -15,8 +15,8 @@ export default class Login extends React.Component{
             <Container>
             <Card>
               <Title>Iniciar Sesion</Title>
-              <Input placeholder='Correo' Label='Correo'/>
-              <Input placeholder='Contraseña' Label='Contraseña'/>
+              <Input placeholder='Correo' label='Correo'/>
+              <Input placeholder='Contraseña' label='Contraseña'/>
               <Button block={true}>Enviar</Button>
               <Center>
                 <Link to='/register'>Ir al registro</Link>

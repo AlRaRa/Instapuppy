@@ -1,12 +1,12 @@
 import * as React from 'react'
 
 
-
-
 const style = {
+
     backgroundColor:'#fff',
     border: '1px solid #ddd',
     borderRadius: '4px',
+    marginBotton: '10px',
     padding:'10px 15px',
     width: 'calc(100% -30px)',
     
@@ -15,8 +15,8 @@ const style = {
 const spanStyle = {
     color:'#777',
     fontSize: '12px',
-    textTransform: 'uppercase',
-    fontWeight: 900
+    fontWeight: 900,
+    textTransform: 'uppercase'
 
 } as React.CSSProperties
 
@@ -29,9 +29,10 @@ interface IInputProps{
 export default class Input extends React.Component<IInputProps>{
     public render(){
 
-        const {label} = this.props
+        const { label } = this.props
  
         return(
+
             <div>
                 <span style={spanStyle}>{label}</span>
                 <input {...this.props}  style={style}/>

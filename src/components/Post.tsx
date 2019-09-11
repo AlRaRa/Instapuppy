@@ -6,12 +6,16 @@ const style = {
     border: '1px solid #ddd',
     padding: '10px 15px'
 }
-export default class Post extends React.Component{
+
+interface IPostProps{
+    image: string
+}
+export default class Post extends React.Component<IPostProps>{
     public render(){
-        const {children} = this.props
+        const { image } = this.props
         return(
            <div style={style}>
-               {children}
+               <img src={image} />
             </div>   
         )
     }

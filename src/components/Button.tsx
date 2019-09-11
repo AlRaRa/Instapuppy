@@ -7,6 +7,7 @@ const style= (block: boolean) => ({
     borderRadius: '4px',
     padding:'10px 15px',
     color:'#fff',
+    marginButton: '10px',
     width: block ? '100%' : undefined
 })
 

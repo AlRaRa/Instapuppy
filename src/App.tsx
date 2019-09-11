@@ -6,6 +6,7 @@ import Input from './components/Input';
 import Button from './components/Button';
 import Title from './components/Tittle';
 import Link from './components/Link'
+import Center from './components/Center';
 
 class App extends React.Component {
   public render() {
@@ -16,7 +17,9 @@ class App extends React.Component {
           <Input placeholder='Correo' Label='Correo'/>
           <Input placeholder='Contraseña' Label='Contraseña'/>
           <Button block={true}>Enviar</Button>
-          <Link>Ir al Registro</Link>
+          <Center>
+            <Link>Ir al registro</Link>
+          </Center>
         </Card>
      </Container>
        

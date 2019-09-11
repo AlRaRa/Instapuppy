@@ -3,7 +3,7 @@ import * as React from 'react'
 
 
 
-const style = (center: boolean) => ({
+const style = (center: boolean): React.CSSProperties => ({
     
     alignItems: center ? 'center' : undefined,
     backgroundColor:'#eee',

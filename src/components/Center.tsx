@@ -8,11 +8,11 @@ const style = {
     width: '100%'
 } as React.CSSProperties
 
-export default class Card extends React.Component{
+export default class Center extends React.Component{
     public render(){
        
         return(
-            <div style={...this.props} style={style}/>
+            <div {...this.props} style={style}/>
         )
     }
 }

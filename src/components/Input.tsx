@@ -29,7 +29,7 @@ interface IInputProps{
 export default class Input extends React.Component<IInputProps>{
     public render(){
 
-        const { label} = this.props
+        const {label} = this.props
  
         return(
             <div>

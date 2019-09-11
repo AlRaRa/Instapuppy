@@ -1,9 +1,13 @@
+import './index.css';
+
+
+import createHistory from 'history/createBrowserHistory'
+
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
 import { Router} from 'react-router'
-import createHistory from 'history/createBrowserHistory'
+
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 

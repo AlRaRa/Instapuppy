@@ -12,7 +12,7 @@ const style ={
     row:{
         dipslay: 'flex',
         justifyContent:'space-between',
-        padding:'15px',
+        marginBottom:'10px',
     }
 }
 export default class Profile extends React.Component{

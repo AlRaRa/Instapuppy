@@ -26,9 +26,9 @@ export default class Profile extends React.Component{
                 </div>
             
             <div style={style.row}>
-                <Card>Img 1</Card>
-                <Card>Img 2</Card>
-                <Card>Img 3</Card>
+                <Card><img src="https://placekitten.com/408/287"/> 1</Card>
+                <Card><img src="https://placekitten.com/408/287"/> 2</Card>
+                <Card><img src="https://placekitten.com/408/287"/> 3</Card>
             </div>
             </div>
            

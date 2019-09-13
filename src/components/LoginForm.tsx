@@ -4,7 +4,9 @@ import Center from './Center';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 
-export default class LoginForm extends React.Component{
+import {reduxForm, InjectedFormProps} from 'redux-form'
+
+class LoginForm extends React.Component<InjectedFormProps>{
     public render(){
 
         return(
@@ -20,3 +22,9 @@ export default class LoginForm extends React.Component{
         )
     }
 }
+
+
+export default reduxForm({
+    form: 'login',
+
+})(LoginForm)

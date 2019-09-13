@@ -10,7 +10,9 @@ export default function reducer(state = {}){
 }
 
 
-export default login = (payload: ILogin) =>
-(dispatch: Dispatch, getState: ()=> any, { auth}: IServices)=>{
+export const login = ({email, password}: ILogin) =>
+ async(dispatch: Dispatch, getState: ()=> any, { auth}: IServices)=>{
+    const result = await auth.signInWithEmailAndPassword(email, password)
+    console.log(result)
     
 }

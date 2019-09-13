@@ -13,11 +13,12 @@ import thunk from 'redux-thunk'
 import * as reducers from './ducks'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import services from './services';
 
 
 const store = createStore(combineReducers({
   ...reducers,
-}),applyMiddleware(thunk))
+}),applyMiddleware(thunk.withExtraArgument(services)))
 
 const history = createHistory()
 

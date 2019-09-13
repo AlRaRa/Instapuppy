@@ -3,8 +3,10 @@ import Card from '../../components/Card';
 import Container from '../../components/Container'
 import Title from '../../components/Tittle';
 import LoginForm from '../../components/LoginForm'
+import {connect} from 'react-redux';
+import {login} from '../../ducks/Users'
 
-export default class Login extends React.Component{
+  class Login extends React.Component{
     public render(){
         return(
             <Container center={true}>
@@ -16,3 +18,12 @@ export default class Login extends React.Component{
         )
     }
 }
+
+const mapStateToProps= (state: any) => state
+
+const mapDispatchToProps = (dispatch: any) => ({
+  login: (payload: any) => dispatch(login(payload))
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

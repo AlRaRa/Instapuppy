@@ -4,8 +4,12 @@ import Container from '../../components/Container'
 import Title from '../../components/Tittle';
 import LoginForm from '../../components/LoginForm'
 import {connect} from 'react-redux';
-import {login} from '../../ducks/Users'
+import {login as loginThunk} from '../../ducks/Users'
 
+
+interface ILoginProps {
+  login: (a: ILogin)
+}
   class Login extends React.Component{
     public render(){
         return(
@@ -22,7 +26,7 @@ import {login} from '../../ducks/Users'
 const mapStateToProps= (state: any) => state
 
 const mapDispatchToProps = (dispatch: any) => ({
-  login: (payload: any) => dispatch(login(payload))
+  login: (payload: any) => dispatch(loginThunk(payload))
 })
 
 

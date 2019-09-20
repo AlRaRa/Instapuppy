@@ -1,8 +1,6 @@
 import * as React from 'react'
 
 
-
-
 const style = {
     textAlign: 'center',
     width: '100%'
